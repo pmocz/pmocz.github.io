@@ -594,3 +594,6 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #f58025;
     background-color: white; }
+
+.pdfobject-container { height: 800px;}
+.pdfobject { border: 1px solid #666; }
