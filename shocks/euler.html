@@ -1,0 +1,67 @@
+ <!--
+Philip Mocz
+Euler and MHD Shock webpage
+Harvard University
+Astronomy 201b
+created: April 10, 2013
+-->
+
+<html>
+
+<head>
+    <meta name="Philip Mocz" content="shocks" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>1D Euler and MHD Shocks</title>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="theory.html">Theory</a></div>
+        <div class="topNaviagationLink"><b href="euler.html">Euler</b></div>
+        <div class="topNaviagationLink"><a href="mhd.html">MHD</a></div>
+        <div class="topNaviagationLink"><a href="ism.html">ISM</a></div>		
+        <div class="topNaviagationLink"><a href="numerical.html">Numerical</a></div>			
+        <div class="topNaviagationLink"><a href="refs.html">References</a></div>
+    </div>
+	
+    <div id="mainPicture2">
+        <div class="picture">
+        </div>
+    </div>
+	
+    <div class="contentBox">
+        <div class="innerBox">
+            <div class="contentTitle">1D Euler Riemann Problem Exact Solver</div>
+            <div class="contentText">
+                <p>
+                   Below is a Mathematica module that solves the Euler Riemann problem exactly. The user can use sliders to set the initial fluid variables (density, velocity, pressure) on the left and right sides of the discontinuity and evolve (and animate!) the system. In addition, the adiabatic index (gamma) can also be changed from 7/5 to 5/3. The thick blue lines show the solution at time t and the dashed green lines show the initial conditions. 
+                </p>
+            </div>
+            <div class="contentTitle">Some Things to Try</div>
+            <div class="contentText">
+               <p>
+				<ul>
+					<li>Spot the strong shock, contact discontinuity, and rarefaction fan in the plot of density. At the contact discontinuity the pressure and velocity are constant (there is only a jump in density).
+					<li>Set up initial conditions that are consistent with a contact discontinuity. In this case, the solution will just advect and will not split into 3 waves.
+					<li>Observe the symmetric property of the problem by switching the left and right states.
+					<li>Find initial conditions that produce two rarefaction fans and no strong shocks.
+					<li>Find initial conditions that produce two strong shocks and no rarefaction fans.
+					<li>Perform a Galilean boost (increase in initial left and right velocities by the same amount) and notice that the shape of the solution does not change (it's only shifted in the lab frame).
+				</ul>
+               </p>
+            </div>
+         </div>
+    </div>
+	
+	<script type="text/javascript" src="https://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+	<script type="text/javascript">
+		var cdf = new cdfplugin();
+		cdf.embed('EulerShock.cdf', 1640, 460);
+	</script>
+
+    <div id="footer"> | Philip Mocz | made with HTML| </div>
+	
+</body>
+</html>

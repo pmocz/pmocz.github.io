@@ -1,0 +1,69 @@
+ <!--
+Philip Mocz
+Euler and MHD Shock webpage
+Harvard University
+Astronomy 201b
+created: April 10, 2013
+-->
+
+<html>
+
+<head>
+    <meta name="Philip Mocz" content="shocks" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>1D Euler and MHD Shocks</title>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="theory.html">Theory</a></div>
+        <div class="topNaviagationLink"><a href="euler.html">Euler</a></div>
+        <div class="topNaviagationLink"><a href="mhd.html">MHD</a></div>
+        <div class="topNaviagationLink"><a href="ism.html">ISM</a></div>		
+        <div class="topNaviagationLink"><b href="numerical.html">Numerical</b></div>			
+        <div class="topNaviagationLink"><a href="refs.html">References</a></div>
+    </div>
+	
+    <div id="mainPicture2">
+        <div class="picture">
+        </div>
+    </div>
+	
+    <div class="contentBox">
+        <div class="innerBox">
+            <div class="contentTitle">Shocks and the Riemann Problem in Full 3D simulations</div>
+            <div class="contentText">
+                <p>
+				</br>
+				   A grid based approach is a very popular technique for solving 3D fluid flow for astrophysical problems. The solution on a domain is discretized (blue cells below), and one solves for the solution to the fluid variables as a function of discretized timesteps at each local cell.
+				   The cells communicate to their adjacent neighbors: the Riemann problem at each of the cell interfaces is solved to calculate the flux (green arrows below) of the conserved fluid variables into or out of the cell. Such an approach leads to a correct solution to large scale fluid flow for both shocks and smooth flows.
+				   A number of developed code that solve the Euler and MHD equations exists for astrophysical research 
+				   (<a href="http://adsabs.harvard.edu/abs/2006A%26A...457..371F">Ramses</a>, <a href="http://adsabs.harvard.edu/abs/2008ApJS..178..137S">Athena</a>, and
+				   <a href="http://adsabs.harvard.edu/abs/2010MNRAS.401..791S">Arepo</a>, just to name a few).
+                </p>
+				<p>
+				   <img class="myimage2" src="grid.png" alt="grid"/> 
+                </p>
+            </div>
+            <div class="contentTitle">1D Solvers for the Riemann Problem</div>
+            <div class="contentText">
+                <p>
+				</br>
+				   The Riemann solvers presented in the modules are solved "exactly" using an iterative method (Newton-Raphson). I start solving the shock structure from both the left and right sides using the jump conditions and making an initial guess for some of the unknown fluid variables. I then calculate how well the contact discontinuity at the center matches its jump conditions and refine my guesses using numerical derivative information of the errors and iterate until minimal error (<10e-8) is reached. In the MHD case, I always assume strong shock jump conditions for simplicity so rarefaction fans are not resolved. Many 3D fluid solvers use approximate non-iterative solvers for faster computation.
+				</br>
+				</br>
+                </p>
+                <p>
+				   The numerical technique for solving the Euler shocks is primarily based on the reference <a href="http://books.google.com/books?id=SqEjX0um8o0C&source=gbs_navlinks_s">Toro (2009) [Riemann solvers and numerical methods for fluid dynamics: a practical introduction]</a>. The module I present is a research-quality solver, useful for serving as a benchmark to test approximate solvers.
+				   The MHD shock solver is based on the approach described in <a href="http://adsabs.harvard.edu/abs/1994JCoPh.111..354D">Dai+ (1994) [An approximate Riemann solver for ideal magnetohydrodynamics]</a>.
+                </p>
+            </div>			
+         </div>
+    </div>
+
+    <div id="footer"> | Philip Mocz | made with HTML| </div>
+	
+</body>
+</html>

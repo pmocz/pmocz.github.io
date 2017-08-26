@@ -1,0 +1,66 @@
+ <!--
+Philip Mocz
+Euler and MHD Shock webpage
+Harvard University
+Astronomy 201b
+created: April 10, 2013
+-->
+
+<html>
+
+<head>
+    <meta name="Philip Mocz" content="shocks" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>1D Euler and MHD Shocks</title>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
+        <div class="topNaviagationLink"><a href="theory.html">Theory</a></div>
+        <div class="topNaviagationLink"><a href="euler.html">Euler</a></div>
+        <div class="topNaviagationLink"><b href="mhd.html">MHD</b></div>
+        <div class="topNaviagationLink"><a href="ism.html">ISM</a></div>		
+        <div class="topNaviagationLink"><a href="numerical.html">Numerical</a></div>			
+        <div class="topNaviagationLink"><a href="refs.html">References</a></div>
+    </div>
+	
+    <div id="mainPicture2">
+        <div class="picture">
+        </div>
+    </div>
+	
+    <div class="contentBox">
+        <div class="innerBox">
+            <div class="contentTitle">1D MHD Riemann Problem</div>
+            <div class="contentText">
+                <p>
+                   Below is a Mathematica module that solves the Riemann problem in the MHD case. Unlike the Riemann solver, which solves the solution in real time, here I calculated a grid of solutions and use interpolation for a fluid user interface experience. This does limit the user input a bit, but the user can modify the density, velocity, and transverse magnetic field of the left state, in addition to modifying the magnetic field across the shock (B_x) and the relative angle between the transverse magnetic fields (Psi) in the initial conditions. The adiabatic index is fixed at 5/3. 
+				   The different shocks are color coded and labeled in the "key:" subplot. The evolution of the density, velocities, and magnetic field are plotted. In addition, the final subplot shows the rotation of the transverse magnetic field due to the shock, as one looks at the shock along the x-axis.
+                </p>
+            </div>
+            <div class="contentTitle">Some Things to Try</div>
+            <div class="contentText">
+               <p>
+				<ul>
+					<li> Explore which fluid variables have discontinuities across each type of wave (fast, slow, rotational, contact discontinuity)
+					<li> What initial conditions produce a rotation in the magnetic field?
+					<li> Changing what initial condition fluid variables affects the relative wave speeds? Try to maximize the fast shock wave speed relative to the other speeds.
+					<li> Which fluid variables are affected by changing the relative angle of the transverse magnetic fields in the initial conditions?
+				</ul>
+               </p>
+            </div>
+         </div>
+    </div>
+
+	<script type="text/javascript" src="https://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+	<script type="text/javascript">
+		var cdf = new cdfplugin();
+		cdf.embed('MHDshock.cdf', 1640, 820);
+	</script>			
+	
+    <div id="footer"> | Philip Mocz | made with HTML| </div>
+	
+</body>
+</html>

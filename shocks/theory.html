@@ -1,0 +1,155 @@
+ <!--
+Philip Mocz
+Euler and MHD Shock webpage
+Harvard University
+Astronomy 201b
+created: April 10, 2013
+-->
+
+<html>
+
+<head>
+    <meta name="Philip Mocz" content="shocks" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>1D Euler and MHD Shocks</title>
+</head>
+
+<body>
+
+    <div id="tabs">
+        <div class="topNaviagationLink"><a href="index.html">Home</a></div>
+        <div class="topNaviagationLink"><b href="theory.html">Theory</b></div>
+        <div class="topNaviagationLink"><a href="euler.html">Euler</a></div>
+        <div class="topNaviagationLink"><a href="mhd.html">MHD</a></div>
+        <div class="topNaviagationLink"><a href="ism.html">ISM</a></div>		
+        <div class="topNaviagationLink"><a href="numerical.html">Numerical</a></div>			
+        <div class="topNaviagationLink"><a href="refs.html">References</a></div>
+    </div>
+	
+    <div id="mainPicture2">
+        <div class="picture">
+        </div>
+    </div>
+	
+    <div class="contentBox">
+        <div class="innerBox">
+            <div class="contentTitle">Fluid Dynamics and Shocks</div>
+            <div class="contentText">
+				</br>
+				<p>
+					Inviscid fluids are governed by the <font color="blue">Euler equations</font>, which are a statement of conservation of mass, momentum, and energy:
+				</p>
+                <p>
+				   <img class="myeqnimage" src="euler.png" alt="euler"/> 
+                </p>
+				<p>
+					In addition, one typically assumes an equation of state (relationship between pressure and density) to close the system off, such as the ideal gas law:
+                </p>
+				<p>
+				   <img class="myeqnimage" src="eos.png" alt="eos"/> 
+                </p>
+				<p>
+					where the internal energy (u) and total energy (e = internal + kinetic) are related by:
+                </p>					
+				<p>
+				   <img class="myeqnimage" src="energy.png" alt="energy"/> 
+                </p>
+				<p>
+					If you add magnetic fields and Maxwell’s equations (assuming no resistivity), you get the <font color="blue">ideal MHD equations</font>
+                </p>					
+				<p>
+				   <img class="myeqnimage" src="mhd.png" alt="mhd"/> 
+                </p>				
+				<p>
+					where the total pressure is a sum of the gas pressure and magnetic pressure:
+                </p>
+				<p>
+				   <img class="myeqnimage" src="pressure.png" alt="pressure"/> 
+                </p>
+				</br>
+				<p>
+					The above equations of fluid dynamics are <font color="blue">partial differential equations</font>, which means they only apply to smooth flows. <font color="blue">Shocks</font>, however, are <font color="blue">discontinuities</font> in the fluid variables (e.g. velocity, pressure):
+                </p>					
+				<p>
+				   <img class="myeqnimage" src="shock.png" alt="shock"/> 
+                </p>				
+				<p>
+					The fluid equations are incompatible at the shock discontinuity, because spatial derivatives are ill-defined.
+                </p>
+				<p>
+					To solve for shock structure, you need to satisfy the <a href="http://en.wikipedia.org/wiki/Rankine%E2%80%93Hugoniot_conditions	">Rankine-Hugoniot jump conditions</a>, which are just statements of conservation of mass, momentum, and energy. They are obtained by integrating the Euler/MHD equations across the discontinuity.
+                </p>
+				</br>
+            </div>
+            <div class="contentTitle">The Riemann Problem</div>
+            <div class="contentText">
+				</br>
+				<p>
+					The 1D <font color="blue">Riemann problem</font> is a good way to understand shock basicsIt asks, how does a fluid evolve if I set up a discontinuity in density, velocity, and pressure at t=0?
+				</p>
+				<p>
+				   <img class="myeqnimage" src="riemannproblem.png" alt="Riemann problem"/> 
+                </p>
+				<p>
+					The shock structure is complex. You don’t simply get an advection of the discontinuity. You produce several <font color="blue">waves</font>.
+				</p>
+				</br>				
+				<p>
+					In an <font color="blue">Euler fluid</font>, you have <font color="blue">3 characteristic velocities</font>:
+				</p>				
+				<p>
+				   <img class="myeqnimage" src="eulerv.png" alt="Euler characteristic velocities"/> 
+                </p>
+				<p>
+					You obtain three types of features:
+					<ul>
+						<li><font color="blue">Shock</font>: sharp discontinuity in fluid variables, physically admissible only if there is an entropy increase through the shock
+						<li><font color="blue">Rarefaction fan</font>: occurs instead of shock when there is no entropy increase through shock
+						<li><font color="blue">Contact discontinuity</font>: discontinuity in density only. It advects passively.
+					</ul> 
+				</p>						
+				<p>
+					You end up with characteristics that may look something like:
+				</p>					
+				<p>
+				   <img class="myeqnimage" src="eulerchar.png" alt="Euler characteristics"/> 
+                </p>	
+				</br>
+				<p>
+					In the <font color="blue">MHD</font> equations, things get more complicated. You have <font color="blue">7 characteristic velocities</font> (and they can sometimes be degenerate!)
+				</p>				
+				<p>
+				   <img class="myeqnimage" src="mhdv.png" alt="MHD characteristic velocities"/> 
+                </p>				
+				<p>
+					You end up with characteristics that may look something like:
+				</p>					
+				<p>
+				   <img class="myeqnimage" src="mhdchar.png" alt="MHD characteristics"/> 
+                </p>
+				<p>
+					In MHD shocks, you obtain a new type of discontinuity:
+					<ul>
+						<li><font color="blue">Rotational discontinuity</font>: A rotation of the transversal magnetic field associated with the Alfven wave speed
+					</ul> 
+				</p>	
+				<p>
+				   <img class="myeqnimage" src="rotational.png" alt="Rotational discontinuity"/> 
+                </p>
+				</br>
+				<p>
+					~~~
+				</p>				
+				<p>
+					This concludes the basic theory background. You can click on the <a href="euler.html">Euler</a> and <a href="mhd.html">MHD</a> tabs on the top of the page to explore the shock structure in a interactive Mathematica module.
+				</p>				
+				
+			</div>	
+				
+         </div>
+    </div>
+
+    <div id="footer"> | Philip Mocz | made with HTML| </div>
+	
+</body>
+</html>
