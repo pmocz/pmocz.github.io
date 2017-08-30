@@ -1,4 +1,6 @@
 # pmocz.github.io
 
-professional website for Philip Mocz
+Source code for my website http://pmocz.github.io
+
+Philip Mocz
 
