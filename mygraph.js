@@ -41,7 +41,7 @@ function draw() {
     {id:30, shape:'circularImage', image:DIR+'xxx.jpg',         label:"C. Zhu",           myurl:""},
     {id:31, shape:'circularImage', image:DIR+'burkhart.jpg',    label:"B. Burkhart",      myurl:"http://www.mhdturbulence.com/Home.html"},
     {id:32, shape:'circularImage', image:DIR+'mckee.jpg',       label:"C. McKee",         myurl:"https://astro.berkeley.edu/faculty-profile/chris-mckee"},
-    {id:33, shape:'circularImage', image:DIR+'hull.jpg',        label:"C.L.H. Hull",      myurl:"https://www.cfa.harvard.edu/~chull/index.html"},
+    {id:33, shape:'circularImage', image:DIR+'hull.png',        label:"C.L.H. Hull",      myurl:"https://www.cfa.harvard.edu/~chull/index.html"},
     {id:34, shape:'circularImage', image:DIR+'agoodman.jpg',    label:"A.A. Goodman",     myurl:"https://astronomy.fas.harvard.edu/people/goodman-alyssa"},
     {id:35, shape:'circularImage', image:DIR+'girart.jpg',      label:"J.M. Girart",      myurl:""},
     {id:36, shape:'circularImage', image:DIR+'xxx.jpg',         label:"P.C. Cortes",      myurl:""},
