@@ -60,6 +60,7 @@ function draw() {
     {id:49, shape:'circularImage', image:DIR+'church.jpg',      label:"B. Church",        myurl:""},
     {id:50, shape:'circularImage', image:DIR+'jostriker.jpg',   label:"J. Ostriker",      myurl:"https://www.astro.columbia.edu/profile?uid=jOstriker"},
     {id:51, shape:'circularImage', image:DIR+'amin.jpg',        label:"M. Amin",          myurl:"http://mustafa-amin.com/"},
+    {id:52, shape:'circularImage', image:DIR+'davies.jpg',      label:"E.Y. Davies",      myurl:""},
   ];
 
   // create connections between people
@@ -335,7 +336,9 @@ function draw() {
     
     {from: 1, to: 51},   // paper 26
     
-
+    {from: 1, to: 31},   // paper 27
+    
+    {from: 1, to: 52},   // paper 28
   ];
 
   // create a network
