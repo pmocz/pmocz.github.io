@@ -1,12 +1,10 @@
-
 var nodes = null;
 var edges = null;
 var network = null;
 
 // Called when the Visualization API is loaded.
 function draw() {
-  // create people.
-  // value corresponds with the age of the person
+  // create people
   var DIR = 'img/people/';
   nodes = [
     {id:1,  shape:'circularImage', image:DIR+'philip_mocz.jpg', label:"PM",               myurl:"https://pmocz.github.io", size: 40},
@@ -61,10 +59,14 @@ function draw() {
     {id:50, shape:'circularImage', image:DIR+'jostriker.jpg',   label:"J. Ostriker",      myurl:"https://www.astro.columbia.edu/profile?uid=jOstriker"},
     {id:51, shape:'circularImage', image:DIR+'amin.jpg',        label:"M. Amin",          myurl:"http://mustafa-amin.com/"},
     {id:52, shape:'circularImage', image:DIR+'davies.jpg',      label:"E.Y. Davies",      myurl:""},
+    {id:53, shape:'circularImage', image:DIR+'bose.jpg',        label:"S. Bose",          myurl:"https://itc.cfa.harvard.edu/people/sownak-bose"},
+    {id:54, shape:'circularImage', image:DIR+'giovanetti.jpg',  label:"C. Giovanetti",    myurl:""},
+    {id:55, shape:'circularImage', image:DIR+'kahn.jpg',        label:"Y. Kahn",          myurl:"http://yonatan-kahn.squarespace.com/"},
+    {id:56, shape:'circularImage', image:DIR+'lisanti.jpg',     label:"M. Lisanti",       myurl:"https://www.mariangelalisanti.com/"},
+    {id:57, shape:'circularImage', image:DIR+'spergel.jpg',     label:"D. Spergel",       myurl:"https://www.astro.princeton.edu/~dns/"},
   ];
 
   // create connections between people
-  // value corresponds with the amount of contact between two people
   edges = [
     {from: 1, to: 2},   // paper 1
     {from: 1, to: 3},
@@ -339,6 +341,102 @@ function draw() {
     {from: 1, to: 31},   // paper 27
     
     {from: 1, to: 52},   // paper 28
+    
+    {from: 1, to: 13},   // paper 29
+	{from: 1, to: 16},
+	{from: 1, to: 25},
+	{from: 1, to: 39},
+	{from: 1, to: 40},
+	{from: 1, to: 41},
+	{from: 1, to: 42},
+	{from: 1, to: 44},
+	{from: 1, to: 45},
+	{from: 1, to: 46},
+	{from: 1, to: 51},
+	{from: 1, to: 53},
+	{from: 13, to: 16},
+	{from: 13, to: 25},
+	{from: 13, to: 39},
+	{from: 13, to: 40},
+	{from: 13, to: 41},
+	{from: 13, to: 42},
+	{from: 13, to: 44},
+	{from: 13, to: 45},
+	{from: 13, to: 46},
+	{from: 13, to: 51},
+	{from: 13, to: 53},
+	{from: 16, to: 25},
+	{from: 16, to: 39},
+	{from: 16, to: 40},
+	{from: 16, to: 41},
+	{from: 16, to: 42},
+	{from: 16, to: 44},
+	{from: 16, to: 45},
+	{from: 16, to: 46},
+	{from: 16, to: 51},
+	{from: 16, to: 53},
+	{from: 25, to: 39},
+	{from: 25, to: 40},
+	{from: 25, to: 41},
+	{from: 25, to: 42},
+	{from: 25, to: 44},
+	{from: 25, to: 45},
+	{from: 25, to: 46},
+	{from: 25, to: 51},
+	{from: 25, to: 53},
+	{from: 39, to: 40},
+	{from: 39, to: 41},
+	{from: 39, to: 42},
+	{from: 39, to: 44},
+	{from: 39, to: 45},
+	{from: 39, to: 46},
+	{from: 39, to: 51},
+	{from: 39, to: 53},
+	{from: 40, to: 41},
+	{from: 40, to: 42},
+	{from: 40, to: 44},
+	{from: 40, to: 45},
+	{from: 40, to: 46},
+	{from: 40, to: 51},
+	{from: 40, to: 53},
+	{from: 41, to: 42},
+	{from: 41, to: 44},
+	{from: 41, to: 45},
+	{from: 41, to: 46},
+	{from: 41, to: 51},
+	{from: 41, to: 53},
+	{from: 42, to: 44},
+	{from: 42, to: 45},
+	{from: 42, to: 46},
+	{from: 42, to: 51},
+	{from: 42, to: 53},
+	{from: 44, to: 45},
+	{from: 44, to: 46},
+	{from: 44, to: 51},
+	{from: 44, to: 53},
+	{from: 45, to: 46},
+	{from: 45, to: 51},
+	{from: 45, to: 53},
+	{from: 46, to: 51},
+	{from: 46, to: 53},
+	{from: 51, to: 53},
+	
+    {from: 1, to: 44},   // paper 30
+    {from: 1, to: 54},
+    {from: 1, to: 55},
+    {from: 1, to: 56},
+    {from: 1, to: 57},
+    {from: 44, to: 54},
+    {from: 44, to: 55},
+    {from: 44, to: 56},
+    {from: 44, to: 57},
+    {from: 54, to: 55},
+    {from: 54, to: 56},
+    {from: 54, to: 57},
+    {from: 55, to: 56},
+    {from: 55, to: 57},
+    {from: 56, to: 57},
+    
   ];
 
   // create a network
