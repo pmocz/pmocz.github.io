@@ -233,9 +233,25 @@
             <a class="btn btn-xl" href="https://scholar.google.com/citations?user=pmocz&user=qv1dWtMAAAAJ">Google scholar</a>
             </p>
             </h3>
-            <h3 class="section-heading">Recent Papers</h3>
+            
+
+      <!-- Collaborator network  onload="draw()" -->
+      <h3 class="section-subheading text-muted">
+      <button onclick="document.getElementById('mynetwork').style.width = '90%'; document.getElementById('mynetwork').style.height = '720px';   draw()">Visualize Collaborator Network</button> <font color="red">(beta...click button, may take a few sec to render, interactive!)</font>
+      <center>
+      <div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><canvas width="300" height="300" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas></div></div>
+      </center>
+      </h3>
+            
+            <h3 class="section-heading">Selected Recent Papers</h3>
 				<p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2019arXiv190804790Y/abstract"> . Fuzzy Dark Matter Soliton Cores around Supermassive Black Holes </a>
+				<a href="https://journals.aps.org/prl/accepted/ff072Ya7Re114272229b9ab6c8007bb975e1b81a1"> First star-forming structures in fuzzy cosmic filaments </a>
+                <br/> 
+                <b>Mocz, P.</b>; Fialkov A.; Vogelsberger, M.; Becerra, F.; Amin, M.; Bose, S.; Boylan-Kolchin, M.; Chavanis, P.H.;  Hernquist, L.; Lancaster, L.;  Marinacci, M.; Robles, V.; Zavala, J; 2019 Phys. Rev. Lett. (Editors' Selection) accepted
+                </p>
+                <p>
+				<p>
+				<a href="https://ui.adsabs.harvard.edu/abs/2019arXiv190804790Y/abstract"> Fuzzy Dark Matter Soliton Cores around Supermassive Black Holes </a>
                 <br/>
                 Davies, E.Y.; <b>Mocz, P.</b>; 2019 MNRAS, submitted
                 </p>
@@ -294,11 +310,6 @@
                 <b>Mocz, P.</b>; 2017 J. Comp. Phys., 328, 221
                 </p>
 
-      <!-- Collaborator network  onload="draw()" -->
-      <button onclick="document.getElementById('mynetwork').style.width = '90%'; document.getElementById('mynetwork').style.height = '720px';   draw()">Visualize Collaborator Network</button> <font color="red">(beta)</font>
-      <center>
-      <div id="mynetwork"><div class="vis-network" tabindex="900" style="position: relative; overflow: hidden; touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"><canvas width="300" height="300" style="position: relative; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;"></canvas></div></div>
-      </center>
 
           </div>
         </div>
@@ -312,10 +323,42 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Research</h2>
-            <h3 class="section-subheading text-muted">some highlights from my papers ...</h3>
+            <h3 class="section-subheading text-muted">Selected highlights from my papers ...</h3>
           </div>
         </div>
         <div class="row">
+			
+		  <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal17">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/fuzzyFilament-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>How Dark Matter shapes First Galaxies </h4>
+              <p class="text-muted">and how to tell if dark matter is fuzzy, warm, or cold
+			  </p>
+            </div>
+          </div>
+          
+		  <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal16">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/df-thumbnail.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Dynamical Friction </h4>
+              <p class="text-muted">in fuzzy dark matter
+			  </p>
+            </div>
+          </div>
 			
 		  <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal15">
@@ -550,7 +593,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Projects</h2>
-            <h3 class="section-subheading text-muted">a list of software projects, interactive modules, tutorials, mini science investigations ...</h3>
+            <h3 class="section-subheading text-muted">A list of software projects, interactive modules, tutorials, mini science investigations ...</h3>
           </div>
         </div>
         <div class="row">
@@ -1363,6 +1406,75 @@
                   <ul class="list-inline">
                     <li><a href="https://arxiv.org/abs/1902.07261">--paper link--</a></li>
                     <li><a href="https://youtu.be/Sz079O4EJUE">--more movies--</a></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Modal 16 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Dynamical Friction</h2>
+                  <p class="item-intro text-muted">in fuzzy dark matter</p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/xZph7U73fFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p> Work led by Princeton graduate student <a href="https://web.astro.princeton.edu/people/lachlan-lancaster">Lachlan Lancaster</a> on calculating different regimes of fuzzy dark matter dynamical friction, and applications to astrophysical systems.
+				  </p>
+                  <ul class="list-inline">
+                    <li><a href="https://arxiv.org/abs/1909.06381">--paper link--</a></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <!-- Modal 17 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>How Dark Matter shapes First Galaxies</h2>
+                  <p class="item-intro text-muted">and how to tell if dark matter is fuzzy, warm, or cold</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/fuzzyFilament.png" alt="">
+                  <p>  With supercomputer simulations on TACC  <i>Stampede2</i>, we simulated what galaxies would like in fuzzy dark matter model for the first time, taking into account dark matter quantum wave effects and baryonic coupling & feedback physics. We compare results against WDM and CDM simulations, and show how next-gen space telescopes like JWST may reveal the small-scale physical nature of the elusive dark matter particle.
+				  </p>
+                  <ul class="list-inline">
+                    <li><a href="https://journals.aps.org/prl/accepted/ff072Ya7Re114272229b9ab6c8007bb975e1b81a1">--Phys. Rev. Letter link--</a></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fa fa-times"></i>
