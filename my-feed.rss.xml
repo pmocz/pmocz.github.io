@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+  <title>Philip Mocz</title>
+  <link>https://pmocz.github.io/</link>
+  <description>Recent papers (PM)</description>
+  <language>en-us</language>
+  <image>
+    <url>https://pmocz.github.io/img/princeton.ico</url>
+    <link>https://pmocz.github.io/</link>
+  </image>
+
+  <item>
+      <title>News  of today</title>
+      <link>https://pmocz.github.io/#publications</link>
+      <description>Paper 1</description>
+  </item>
+  
+  <item>
+      <title>News of tomorrows</title>
+      <link>https://pmocz.github.io/#publications</link>
+      <description>Paper 2</description>
+    </item>
+    
+</channel>
+</rss> 
