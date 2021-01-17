@@ -61,7 +61,8 @@ body {
   -webkit-tap-highlight-color: #124A92; }
 
 #mainNav {
-  background-color: #222222; }
+  background-color: #eeeeee; 
+  border-bottom: 1px solid; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -330,7 +331,7 @@ header.masthead {
       margin-left: 0;
       text-align: center;
       color: white;
-      border: 7px solid #f1f1f1;
+      border: 7px solid #124A92;
       border-radius: 100%;
       background-color: #124A92; }
       .timeline > li .timeline-image h4 {
@@ -423,7 +424,7 @@ header.masthead {
   .team-member img {
     width: 150px;
     height: 150px;
-    border: 7px solid white; }
+    border: 7px solid #124A92; }
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
@@ -437,7 +438,7 @@ header.masthead {
   .team-member-small img {
     width: 175px;
     height: 175px;
-    border: 7px solid white; }
+    border: 7px solid #124A92; }
   .team-member-small h4 {
     margin-top: 25px;
     margin-bottom: 0;
