@@ -87,6 +87,13 @@
       }
     </style>
     
+    <!-- My blog feed -->
+    <style type="text/css">
+      #myblogfeed {
+        width: 300px;
+      }
+    </style>
+    
     <script type="text/javascript" src="vis-network.min.js"></script>
     <script type="text/javascript" src="mygraph.js"></script>
     <link href="vis-network.min.css" rel="stylesheet" type="text/css">
@@ -722,8 +729,9 @@
             <h2 class="section-heading">Blog</h2>
             <h3 class="section-subheading text-muted">~100 line Python tutorials to intro to scientific computing, hosted on my Medium blog. <a href="https://philip-mocz.medium.com">Follow me</a> for updates! My latest posts are shown below</h3>
             <div class="col-lg-12 text-left">
-            <!-- <script src="//rss.bloople.net/?url=https%3A%2F%2Fphilip-mocz.medium.com%2Ffeed&limit=4&showtitle=false&type=js"></script> -->
-            <iframe width="400" src="//rss.bloople.net/?url=https%3A%2F%2Fphilip-mocz.medium.com%2Ffeed&limit=4&showtitle=false&type=html"></iframe>
+			<div id="myblogfeed">
+            <script src="//rss.bloople.net/?url=https%3A%2F%2Fphilip-mocz.medium.com%2Ffeed&limit=4&showtitle=false&type=js"></script>
+            </div>
 			</div>
           </div>
         </div>
