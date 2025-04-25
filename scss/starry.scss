@@ -40,7 +40,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     &::after {
       content: " ";
       position: absolute;
-      top: 1000px;
+      top: 500px;
       width: 1px;
       height: 1px;
       background: transparent;
