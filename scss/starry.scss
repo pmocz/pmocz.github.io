@@ -4,15 +4,15 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(-1000px);
   }
 }
 
 // Function to generate multiple box-shadow values for stars
 @function multiple-box-shadow($number_of_stars) {
-  $value: "#{random(2000)}px #{random(2000)}px #FFF"; // Initial shadow
+  $value: "#{random(2000)}px #{random(1000)}px #FFF"; // Initial shadow
   @for $i from 2 through $number_of_stars {
-    $value: "#{$value}, #{random(2000)}px #{random(2000)}px #FFF"; // Add more shadows
+    $value: "#{$value}, #{random(2000)}px #{random(1000)}px #FFF"; // Add more shadows
   }
   @return unquote($value); // Return the concatenated value
 }
@@ -40,7 +40,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     &::after {
       content: " ";
       position: absolute;
-      top: 2000px;
+      top: 1000px;
       width: 1px;
       height: 1px;
       background: transparent;
