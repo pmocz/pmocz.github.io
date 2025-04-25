@@ -10,9 +10,15 @@
 
 // Function to generate multiple box-shadow values for stars
 @function multiple-box-shadow($number_of_stars) {
-  $value: "#{random(2000)}px #{random(1000)}px #FFF"; // Initial shadow
+  $randomX: random(1000);
+  $randomY: random(1000);
+  $value: "#{$randomX}px #{$randomY}px #FFF"; // Initial shadow
+  $value: "#{$value}, #{$randomX}px #{$randomY+1000}px #FFF";
+  $value: "#{$value}, #{$randomX}px #{$randomY+-1000}px #FFF";
   @for $i from 2 through $number_of_stars {
-    $value: "#{$value}, #{random(2000)}px #{random(1000)}px #FFF"; // Add more shadows
+    $randomX: random(1000);
+    $randomY: random(1000);
+    $value: "#{$value}, #{$randomX}px #{$randomY}px #FFF, #{$randomX}px #{$randomY+1000}px #FFF, #{$randomX}px #{$randomY+-1000}px #FFF"; // Add more shadows
   }
   @return unquote($value); // Return the concatenated value
 }
@@ -50,7 +56,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
   // Apply styles to each star layer with different sizes
   #stars {
     box-shadow: $shadows-small; // Apply small star shadows
-    animation: animStar 50s linear infinite;
+    animation: animStar 40s linear infinite;
     &::after {
       box-shadow: $shadows-small; // Apply small star shadows to pseudo-element
     }
@@ -60,7 +66,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     width: 2px;
     height: 2px;
     box-shadow: $shadows-medium; // Apply medium star shadows
-    animation: animStar 100s linear infinite;
+    animation: animStar 80s linear infinite;
     &::after {
       width: 2px;
       height: 2px;
@@ -72,7 +78,7 @@ $shadows-big: multiple-box-shadow(100); // Big stars
     width: 3px;
     height: 3px;
     box-shadow: $shadows-big; // Apply big star shadows
-    animation: animStar 150s linear infinite;
+    animation: animStar 120s linear infinite;
     &::after {
       width: 3px;
       height: 3px;
