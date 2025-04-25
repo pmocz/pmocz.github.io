@@ -117,6 +117,7 @@ body {
 header.masthead {
   text-align: center;
   color: #FFF;
+  background-color: #090A0F;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: local;
