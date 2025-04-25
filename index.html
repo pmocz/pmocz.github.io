@@ -3,15 +3,15 @@
 <html lang="en">
 
   <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136974463-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	
-	gtag('config', 'UA-136974463-1');
-	</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136974463-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-136974463-1');
+  </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Philip Mocz, computational physicist at Lawrence Livermore National Laboratory">
@@ -57,7 +57,7 @@
       "worksFor": {
         "@type": "Organization",
         "name": "Princeton University"
-      }  
+      }
     }
     </script>
 
@@ -75,7 +75,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/starry.css" rel="stylesheet" >
 
     <!-- My network -->
     <style type="text/css">
@@ -86,19 +87,19 @@
         background-color:#eeeeee;
       }
     </style>
-    
+
     <!-- My blog feed -->
     <style>
     .medium-feed-image img {
         max-width: 300px; /* Adjust this value to your desired width */
         height: auto;
     }
-	</style>
-    
+  </style>
+
     <script type="text/javascript" src="vis-network.min.js"></script>
     <script type="text/javascript" src="mygraph.js"></script>
     <link href="vis-network.min.css" rel="stylesheet" type="text/css">
-    
+
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for pmocz.github.io" href="https://pmocz.github.io/my-feed.rss.xml" />
 
   </head>
@@ -153,15 +154,19 @@
     <!-- Header -->
     <header class="masthead">
       <div class="container">
+        <div class="star-layers">
+          <div class="star-layer" id="stars"></div>
+          <div class="star-layer" id="stars2"></div>
+          <div class="star-layer" id="stars3"></div>
         <div class="intro-text">
           <div class="intro-heading">Philip Mocz</div>
-          <div class="intro-lead-in">Software Engineer at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Flatiron Institute</a></div>  
+          <div class="intro-lead-in">Software Engineer at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Flatiron Institute</a></div>
             <div class="team-member">
-          			<img class="rounded-circle img-fluid" src="img/people/philip_mocz.jpg" alt="">
-			</div>	
+                <img class="rounded-circle img-fluid" src="img/people/philip_mocz.jpg" alt="">
+            </div>
           <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/PMocz">
+                  <a href="https://x.com/PMocz">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
@@ -179,7 +184,7 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/philip-mocz/">
+                  <a href="https://www.linkedin.com/in/philip-mocz">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -189,17 +194,17 @@
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://bitbucket.org/pmocz/">
+                  <a href="https://bitbucket.org/pmocz">
                     <i class="fa fa-bitbucket"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/pmocz">
-					<i class="fa fa-facebook"></i>
+          <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.instagram.com/pmocz/">
+                  <a href="https://www.instagram.com/pmocz">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
@@ -213,6 +218,7 @@
           <a class="btn btn-xl js-scroll-trigger" href="#about">Learn More</a>
         </div>
       </div>
+      </div>
     </header>
 
     <!-- About -->
@@ -224,55 +230,55 @@
           </div>
         </div>
         <div class="col-lg-12 text-justify text-muted">
-			
-			<!-- I consider myself a leading expert on computational methods for astrophysics and applying them to solve challenging problems in cosmology and turbulence. -->
-			
-			<p>
-			  I am a computational research scientist and software engineer at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Flatiron Institute, Center for Computational Astrophysics</a> interested in developing software for scalable high-performance multi-physics simulations integrated with modern AI techniques.
-			  Prior to joining the foundation, I was a computational physicist at the <a href = "https://www.llnl.gov/">Lawrence Livermore National Laboratory</a> where I developed high-performance multi-physics simulation code on heterogenous architectures, in particular
-			  high-order Arbitrary Lagrangian-Eulerian (ALE) finite element methods for magnetohydrodynamics (MHD) simulations, 
-			  as part of the <a href = "https://computing.llnl.gov/projects/mapp">Multiphysics on Advanced Platforms Project (MAPP)</a>.
-			  I also have in interest in simulating cosmological dark matter models, such as <a 
-			  href="https://physics.aps.org/synopsis-for/10.1103/PhysRevLett.123.141301"> 
-			  fuzzy dark matter</a>.
-			</p>
-			  
-			<p>
-			  I completed my PhD in Astrophysics 2017 at 
-			  <a href="https://www.harvard.edu/">Harvard University</a>
-			  under the advisorship of <a href="http://astronomy.fas.harvard.edu/people/lars-hernquist">Lars 
-			  Hernquist</a>. During my PhD, I designed a finite volume moving mesh MHD code,
-			  and applied it to study structure formation and magnetic field growth in 
-			  the interstellar medium and in cosmological settings.
-			  My physics modules were implemented into the 
-			  <a href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a> 
-			  code.
-			  I received an AB in Mathematics and Astrophysics in 2012 from Harvard.
-			</p>
-			
-			<p>
-			  My research interests include
-			  multi-physics simulations, cosmology, galaxy 
-			  evolution, black hole physics, turbulence, numerical 
-			  methods, computer visualization, and machine learning/AI. 
-            </p>
-            
-            <p>
-			  I grew up in <a class="portfolio-link" data-toggle="modal" href="#portfolioModalHawaii"> Hawaii</a> 
-			  and I enjoy spending time in the <a class="portfolio-link" data-toggle="modal" href="#portfolioModalOutdoors"> outdoors</a>.
+
+      <!-- I consider myself a leading expert on computational methods for astrophysics and applying them to solve challenging problems in cosmology and turbulence. -->
+
+      <p>
+        I am a computational research scientist and software engineer at the <a href = "https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Flatiron Institute, Center for Computational Astrophysics</a> interested in developing software for scalable high-performance multi-physics simulations integrated with modern AI techniques.
+        Prior to joining the foundation, I was a computational physicist at the <a href = "https://www.llnl.gov/">Lawrence Livermore National Laboratory</a> where I developed high-performance multi-physics simulation code on heterogenous architectures, in particular
+        high-order Arbitrary Lagrangian-Eulerian (ALE) finite element methods for magnetohydrodynamics (MHD) simulations,
+        as part of the <a href = "https://computing.llnl.gov/projects/mapp">Multiphysics on Advanced Platforms Project (MAPP)</a>.
+        I also have in interest in simulating cosmological dark matter models, such as <a
+        href="https://physics.aps.org/synopsis-for/10.1103/PhysRevLett.123.141301">
+        fuzzy dark matter</a>.
+      </p>
+
+      <p>
+        I completed my PhD in Astrophysics 2017 at
+        <a href="https://www.harvard.edu/">Harvard University</a>
+        under the advisorship of <a href="http://astronomy.fas.harvard.edu/people/lars-hernquist">Lars
+        Hernquist</a>. During my PhD, I designed a finite volume moving mesh MHD code,
+        and applied it to study structure formation and magnetic field growth in
+        the interstellar medium and in cosmological settings.
+        My physics modules were implemented into the
+        <a href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a>
+        code.
+        I received an AB in Mathematics and Astrophysics in 2012 from Harvard.
+      </p>
+
+      <p>
+        My research interests include
+        multi-physics simulations, cosmology, galaxy
+        evolution, black hole physics, turbulence, numerical
+        methods, computer visualization, and machine learning/AI.
             </p>
 
             <p>
-			  📝 I maintain a blog on introductory tutorials to <a href="https://philip-mocz.medium.com">scientific computing with Python</a>, 
-			  accessible at the undergraduate level. You can follow me on <a href="https://philip-mocz.medium.com">Medium</a> and <a href="https://twitter.com/PMocz">Twitter</a>.
+        I grew up in <a class="portfolio-link" data-toggle="modal" href="#portfolioModalHawaii"> Hawaii</a>
+        and I enjoy spending time in the <a class="portfolio-link" data-toggle="modal" href="#portfolioModalOutdoors"> outdoors</a>.
             </p>
-            
-            <p> </p>
-            
+
             <p>
-			<center>
-			<a href="https://www.simonsfoundation.org/flatiron/"><img class="img-fluid" style="height:60px;" src="img/sf.png" alt=""></a>
-			<a href="https://www.llnl.gov/"><img class="img-fluid" style="height:60px;" src="img/llnl.jpg" alt=""></a>
+        📝 I maintain a blog on introductory tutorials to <a href="https://philip-mocz.medium.com">scientific computing with Python</a>,
+        accessible at the undergraduate level. You can follow me on <a href="https://philip-mocz.medium.com">Medium</a> and <a href="https://twitter.com/PMocz">Twitter</a>.
+            </p>
+
+            <p> </p>
+
+            <p>
+            <center>
+            <a href="https://www.simonsfoundation.org/flatiron/"><img class="img-fluid" style="height:60px;" src="img/sf.png" alt=""></a>
+            <a href="https://www.llnl.gov/"><img class="img-fluid" style="height:60px;" src="img/llnl.jpg" alt=""></a>
             <a href="https://web.astro.princeton.edu/"><img class="img-fluid" style="height:60px;" src="img/princeton.png" alt=""></a>
             <a href="https://astronomy.fas.harvard.edu/"><img class="img-fluid" style="height:60px;" src="img/harvard.png" alt=""></a>
             <a href="https://www.energy.gov/"><img class="img-fluid" style="height:60px;" src="img/doe.png" alt=""></a>
@@ -281,12 +287,12 @@
             <a href="https://www.xsede.org/"><img class="img-fluid" style="height:60px;" src="img/xsede2.png" alt=""></a>
             </center>
             </p>
-            
+
         </div>
       </div>
     </section>
-    
-    
+
+
     <!-- CV -->
     <section class="bg-light" id="cv">
       <div class="container">
@@ -305,8 +311,8 @@
         </div>
       </div>
     </section>
-    
-    
+
+
     <!-- Publications -->
     <section id="publications">
       <div class="container">
@@ -322,54 +328,54 @@
             </h3>
 
             <h3 class="section-heading">Selected Recent Papers <a href="my-feed.rss.xml"><img border="0" alt="Subscribe to What's New" src="img/fZIDSoj.png" width="20" height="20"></h3>
-				<p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.2608M/abstract"> Cosmological Structure Formation and Soliton Phase Transition in Fuzzy Dark Matter with Axion Self-Interactions</a>
-                <br/> 
+        <p>
+        <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.2608M/abstract"> Cosmological Structure Formation and Soliton Phase Transition in Fuzzy Dark Matter with Axion Self-Interactions</a>
+                <br/>
                 <b>Mocz, P.</b>; Fialkov, A.; Vogelsberger, M.; Boylan-Kolchin, M; Chavanis, P.H.; Amin, M.A.; Bose, S.; Dome, T.; Hernquist, L.; Lancaster, L.; Notis, M.; Painter, C.; Robles, V.H.; Zavala, J.; 2023 MNRAS, 521, 2608
                 </p>
-				<p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...910...29M/abstract"> Toward Cosmological Simulations of Dark Matter on Quantum Computers</a>
-                <br/> 
+        <p>
+        <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...910...29M/abstract"> Toward Cosmological Simulations of Dark Matter on Quantum Computers</a>
+                <br/>
                 <b>Mocz, P.</b>; Szasz, A.; 2021 ApJ, 910, 29
                 </p>
-				<p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.2027M/abstract"> Galaxy Formation with BECDM - II. Cosmic Filaments and First Galaxies </a>
-                <br/> 
+        <p>
+        <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.2027M/abstract"> Galaxy Formation with BECDM - II. Cosmic Filaments and First Galaxies </a>
+                <br/>
                 <b>Mocz, P.</b>; Fialkov, A.; Vogelsberger, M.; Becerra, F.; Shen, X.; Robles, V.H.; Amin, M.A.; Zavala, J.; Boylan-Kolchin, M.; Bose, S.; Marinacci, F.; Chavanis, P.H.; Lancaster, K.; Hernquist, L.; 2021 MNRAS, 494, 2021
                 </p>
-				<p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2019PhRvL.123n1301M/abstract"> First star-forming structures in fuzzy cosmic filaments </a>
-                <br/> 
+        <p>
+        <a href="https://ui.adsabs.harvard.edu/abs/2019PhRvL.123n1301M/abstract"> First star-forming structures in fuzzy cosmic filaments </a>
+                <br/>
                 <b>Mocz, P.</b>; Fialkov A.; Vogelsberger, M.; Becerra, F.; Amin, M.A.; Bose, S.; Boylan-Kolchin, M.; Chavanis, P.H.; Hernquist, L.; Lancaster, L.; Marinacci, M.; Robles, V.H.; Zavala, J; 2019 Phys. Rev. Lett. <b>(Editors' Selection)</b> 123, 14
-                <br/> 
+                <br/>
                  <img src="img/prlcover.jpg" alt="" height="170" > </p>
                 <!-- <p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5721D/abstract"> Fuzzy Dark Matter Soliton Cores around Supermassive Black Holes </a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5721D/abstract"> Fuzzy Dark Matter Soliton Cores around Supermassive Black Holes </a>
                 <br/>
                 Davies, E.Y.; <b>Mocz, P.</b>; 2020 MNRAS, 492, 5721
                 </p> -->
                 <p>
-				<a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...884L..35M/abstract"> A Markov model for non-lognormal density distributions in compressive isothermal turbulence </a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...884L..35M/abstract"> A Markov model for non-lognormal density distributions in compressive isothermal turbulence </a>
                 <br/>
                 <b>Mocz, P.</b>; Burkhart, B.; 2019 ApJL, 884, 2
                 </p>
                 <p>
-				<a href="https://https://ui.adsabs.harvard.edu/abs/2019PhRvD.100f3507A/abstract"> Formation, Gravitational Clustering and Interactions of Non-relativistic Solitons in an Expanding Universe </a>
+        <a href="https://https://ui.adsabs.harvard.edu/abs/2019PhRvD.100f3507A/abstract"> Formation, Gravitational Clustering and Interactions of Non-relativistic Solitons in an Expanding Universe </a>
                 <br/>
                 Amin, M.; <b>Mocz, P.</b>; 2019 Phys. Rev. D, 100, 6
                 </p>
                 <!-- <p>
-				<a href="http://ui.adsabs.harvard.edu/abs/2019MNRAS.485.2861C"> Heating of Milky Way disc stars by dark matter fluctuations in cold dark matter and fuzzy dark matter paradigms </a>
+        <a href="http://ui.adsabs.harvard.edu/abs/2019MNRAS.485.2861C"> Heating of Milky Way disc stars by dark matter fluctuations in cold dark matter and fuzzy dark matter paradigms </a>
                 <br/>
                 Church, B.; <b>Mocz, P.</b>; Ostriker, J.P.; 2019 MNRAS, 485, 2861
                 </p> -->
                 <p>
-				<a href="http://ui.adsabs.harvard.edu/abs/2018MNRAS.480.3916M"> Star formation from dense shocked regions in supersonic isothermal magnetoturbulence </a>
+        <a href="http://ui.adsabs.harvard.edu/abs/2018MNRAS.480.3916M"> Star formation from dense shocked regions in supersonic isothermal magnetoturbulence </a>
                 <br/>
                 <b>Mocz, P.</b>; Burkhart, B.; 2018 MNRAS, 480, 3916
                 </p>
                 <p>
-				<a href="http://ui.adsabs.harvard.edu/abs/2018PhRvD..97h3519M"> On the Schrodinger-Poisson--Vlasov-Poisson correspondence </a>
+        <a href="http://ui.adsabs.harvard.edu/abs/2018PhRvD..97h3519M"> On the Schrodinger-Poisson--Vlasov-Poisson correspondence </a>
                 <br/>
                 <b>Mocz, P.</b>; Lancaster, L.; Fialkov A.; Becerra, F.; Chavanis, P.H.; 2018 PhRvD, 97, 3519
                 </p>
@@ -385,17 +391,17 @@
                 </p> -->
                 <p>
                 <a href="http://ui.adsabs.harvard.edu/abs/2017ApJ...838...40M"> Moving mesh simulations of star forming cores in magneto-gravo-turbulence </a>
-				<br/>
+        <br/>
                 <b>Mocz, P.</b>; Burkhart, B.; Hernquist, L.; McKee, C.; Springel, V.; 2017 ApJ, 838, 1
                 </p>
                 <!-- <p>
                 <a href="http://ui.adsabs.harvard.edu/abs/2017MNRAS.465.3154M"> Integer lattice dynamics for Vlasov-Poisson </a>
-				<br/>
+        <br/>
                 <b>Mocz, P.</b>; Succi, S.; 2017 MNRAS, 465, 3154
                 </p> -->
-                <!-- <p> 
+                <!-- <p>
                 <a href="http://ui.adsabs.harvard.edu/abs/2017JCoPh.328..221M"> Correspondence between constrained transport and vector potential methods for MHD </a>
-			    <br/>
+          <br/>
                 <b>Mocz, P.</b>; 2017 J. Comp. Phys., 328, 221
                 </p> -->
 
@@ -403,7 +409,7 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- Research Grid -->
     <section class="bg-light" id="portfolio">
@@ -416,7 +422,7 @@
         </div>
         <div class="row">
 
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal20">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -428,12 +434,12 @@
             <div class="portfolio-caption">
               <h4>Multiphysics Simulations for the Exascale Era</h4>
               <p class="text-muted">
-				Incorporating multiple physics, mathematics, and computer science packages into one integrated code
-			  </p>
+        Incorporating multiple physics, mathematics, and computer science packages into one integrated code
+        </p>
             </div>
           </div>
-			
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal19">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -445,11 +451,11 @@
             <div class="portfolio-caption">
               <h4>How Dark Matter shapes First Galaxies </h4>
               <p class="text-muted">and how to tell if dark matter is fuzzy, warm, or cold
-			  </p>
+        </p>
             </div>
           </div>
-          
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal18">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -461,11 +467,11 @@
             <div class="portfolio-caption">
               <h4>Turbulence Markov Model </h4>
               <p class="text-muted">to describe non-lognormal density distributions
-			  </p>
+        </p>
             </div>
           </div>
-          
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal17">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -477,11 +483,11 @@
             <div class="portfolio-caption">
               <h4>Dynamical Friction </h4>
               <p class="text-muted">in fuzzy dark matter
-			  </p>
+        </p>
             </div>
           </div>
-          
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal16">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -492,12 +498,12 @@
             </a>
             <div class="portfolio-caption">
               <h4>Supersonic turbulence </h4>
-              <p class="text-muted">dense structures in compressible turbulence 
-			  </p>
+              <p class="text-muted">dense structures in compressible turbulence
+        </p>
             </div>
           </div>
-			
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal15">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -509,11 +515,11 @@
             <div class="portfolio-caption">
               <h4>Solitons from early universe scalar fields </h4>
               <p class="text-muted">formation, gravitational clustering and interactions of solitons
-			  </p>
+        </p>
             </div>
           </div>
-			
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal14">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -527,8 +533,8 @@
               <p class="text-muted">emergence of classical behavior from quantum mechanics</p>
             </div>
           </div>
-			
-		  <div class="col-md-4 col-sm-6 portfolio-item">
+
+      <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal13">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -542,7 +548,7 @@
               <p class="text-muted">quantum turbulent properties</p>
             </div>
           </div>
-			
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal12">
               <div class="portfolio-hover">
@@ -627,7 +633,7 @@
               <p class="text-muted">for the non-linear Schr&ouml;dinger equations</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
@@ -642,7 +648,7 @@
               <p class="text-muted">on unstructured and moving meshes</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
@@ -657,7 +663,7 @@
               <p class="text-muted">on moving meshes</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
@@ -687,7 +693,7 @@
               <p class="text-muted">cosmological growth and feedback</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
@@ -702,7 +708,7 @@
               <p class="text-muted">powerful double-lobed radio galaxies switched off</p>
             </div>
           </div>
-          
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -731,14 +737,14 @@
             <h2 class="section-heading">Blog</h2>
             <h3 class="section-subheading text-muted">~100 line Python tutorials to intro to scientific computing, hosted on my Medium blog. <a href="https://philip-mocz.medium.com">Follow me</a> for updates! My latest posts are shown below</h3>
             <div class="col-lg-12 text-left">
-			<div id="myblogfeed">
+      <div id="myblogfeed">
             <script src="//rss.bloople.net/?url=https%3A%2F%2Fphilip-mocz.medium.com%2Ffeed&limit=4&showtitle=false&type=js"></script>
             </div>
-			</div>
+      </div>
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
     <!-- People -->
     <section class="bg-light"  id="people">
@@ -757,9 +763,9 @@
       </center>
       the connections in the graph indicate co-authorships in research papers I led
       </h3>
-      
-			</div>
-		</div>
+
+      </div>
+    </div>
       <div class="row">
 
 
@@ -906,7 +912,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
           </div>
         </div>
       </div>
-    </section>   
+    </section>
 
     <!-- Teaching -->
     <section id="teaching">
@@ -917,18 +923,18 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
             <h3 class="section-subheading text-muted">List of courses at Harvard for which I have served as a Teaching Fellow:</h3>
             <div class="col-lg-12 text-left">
             <ul>
-				<li>Astronomy 151. Astronomical Fluid Dynamics. Spring 2016</li>
-				<li>Applied Computation 274. Computational Fluid Dynamics. Fall 2014</li>
-				<li>Applied Computation 274. Computational Fluid Dynamics. Spring 2014</li>
-				<li>Applied Mathematics 205. Advanced Scientific Computing: Numerical Methods. Fall 2012</li>
-			</ul>
-			</div>
-        
+        <li>Astronomy 151. Astronomical Fluid Dynamics. Spring 2016</li>
+        <li>Applied Computation 274. Computational Fluid Dynamics. Fall 2014</li>
+        <li>Applied Computation 274. Computational Fluid Dynamics. Spring 2014</li>
+        <li>Applied Mathematics 205. Advanced Scientific Computing: Numerical Methods. Fall 2012</li>
+      </ul>
+      </div>
+
           </div>
         </div>
       </div>
-    </section> 
-    
+    </section>
+
     <!-- Outreach -->
     <section class="bg-light"  id="outreach">
       <div class="container">
@@ -938,20 +944,20 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
             <h3 class="section-subheading text-muted">List and links to selected outreach activities</h3>
             <div class="col-lg-12 text-left">
             <ul>
-				<li><a href="https://wci.llnl.gov/students">LLNL DSTI Research Program Mentor</a>. 2022, 2023</li>
-				<li><a href="https://cor.gsfc.nasa.gov/sigs/starssig/starssig-lc.php">NASA Cosmic Origins Transitional Leadership Team</a>. 2021, 2022</li>
-				<li><a href="https://www.skypeascientist.com/">Skype A Scientist</a>. 2020</li>
-				<li><a href="https://undergraduateresearch.princeton.edu/programs/summer-programs/princeton-astrophysics-undergraduate-summer-research-program">Princeton Astrophysics Undergraduate Summer Research Program</a> Mentor. 2019, 2020</li>
-				<li>Harvard Astronomy Department Peer Mentor. 2015-2017</li>
-				<li><a href="https://library.cfa.harvard.edu/">Harvard-Smithsonian CfA Wolbach Library Committee</a> Graduate Student Representative. 2015-2017</li>
-				<li><a href="https://www.cambridgesciencefestival.org/">Einstein in the Classroom</a> Instructor. 2015</li>
-			</ul>
-			</div>
-     
+        <li><a href="https://wci.llnl.gov/students">LLNL DSTI Research Program Mentor</a>. 2022, 2023</li>
+        <li><a href="https://cor.gsfc.nasa.gov/sigs/starssig/starssig-lc.php">NASA Cosmic Origins Transitional Leadership Team</a>. 2021, 2022</li>
+        <li><a href="https://www.skypeascientist.com/">Skype A Scientist</a>. 2020</li>
+        <li><a href="https://undergraduateresearch.princeton.edu/programs/summer-programs/princeton-astrophysics-undergraduate-summer-research-program">Princeton Astrophysics Undergraduate Summer Research Program</a> Mentor. 2019, 2020</li>
+        <li>Harvard Astronomy Department Peer Mentor. 2015-2017</li>
+        <li><a href="https://library.cfa.harvard.edu/">Harvard-Smithsonian CfA Wolbach Library Committee</a> Graduate Student Representative. 2015-2017</li>
+        <li><a href="https://www.cambridgesciencefestival.org/">Einstein in the Classroom</a> Instructor. 2015</li>
+      </ul>
+      </div>
+
           </div>
         </div>
       </div>
-    </section> 
+    </section>
 
 
     <!-- Miscellaneous -->
@@ -966,7 +972,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         <div class="row">
           <div class="col-lg-12">
             <ul class="timeline">
-		      <li>
+          <li>
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/projects/pic.gif" alt="">
                 </div>
@@ -1131,7 +1137,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                 </li>
               </ul>
             </div>
-			<p> </p>
+      <p> </p>
             <p> <a href="mailto:pmocz@flatironinstitute.org"><img src="img/mail-icon.png" style="width:1em;margin-right:.5em;" alt="">pmocz@flatironinstitute.org</a> </p>
             <a href="https://orcid.org/0000-0001-6631-2566" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0001-6631-2566</a>
             <p> </p>
@@ -1142,18 +1148,18 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
             </ul>
             <p class="text-muted">Philip Mocz pronounced:&nbsp;
             <audio controls=""><source src="philip_mocz_pronunciation.mp3" type="audio/mpeg"> Your browser does not support the audio element.</audio></p>
-          </div> 
+          </div>
           <div class="col-sm-4 text-center">
-		  <a href="https://twitter.com/PMocz"> <i>Twitter feed:</i> </a>
+      <a href="https://twitter.com/PMocz"> <i>Twitter feed:</i> </a>
           <a class="twitter-timeline" data-height="640" href="https://twitter.com/PMocz?ref_src=twsrc%5Etfw">Tweets by PMocz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           </div>
           <div class="col-sm-4 text-center">
-			<!-- Instagram Feed -->		
-			<a href="https://www.instagram.com/pmocz/"> <i>Instagram:</i> </a>
+      <!-- Instagram Feed -->
+      <a href="https://www.instagram.com/pmocz/"> <i>Instagram:</i> </a>
             <div id="instafeed">
             </div>
 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CqRCDzEONj9/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CqRCDzEONj9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CqRCDzEONj9/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Philip Mocz (@pmocz)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-		  </div>
+      </div>
       </div>
     </section>
 
@@ -1164,7 +1170,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <span class="copyright">&copy;2012-2024 Philip Mocz</span>
+            <span class="copyright">&copy;2012-2025 Philip Mocz</span>
           </div>
         </div>
       </div>
@@ -1253,13 +1259,13 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">ionization structure of Seyfert 2 galaxy IRAS 18325-5926 with <i>Chandra</i></p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/iras.bmp" alt="">
                   <p>
-				 I worked with Julia Lee at Harvard University (2009) 
-				 to study the gas kinematics and ionization properties 
-				 around the Seyfert 2 AGN IRAS 18325-5926 by analyzing 
-				 <i>Chandra</i> High Energy transmission grating 
-				 spectra. We detected two blue-shifted ionized winds. 
-				 We also studied the the broad Fe K emission profile to 
-				 understand the properties of the accretion disk.
+         I worked with Julia Lee at Harvard University (2009)
+         to study the gas kinematics and ionization properties
+         around the Seyfert 2 AGN IRAS 18325-5926 by analyzing
+         <i>Chandra</i> High Energy transmission grating
+         spectra. We detected two blue-shifted ionized winds.
+         We also studied the the broad Fe K emission profile to
+         understand the properties of the accretion disk.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2011ApJ...729...30M">--paper link--</a></li>
@@ -1274,7 +1280,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
- 
+
      <!-- Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1292,25 +1298,25 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <h2>Inverse-Compton Ghosts</h2>
                   <p class="item-intro text-muted">powerful double-lobed radio galaxies switched off</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/hdf130.bmp" alt="">
-                  <p>  
-				 I worked with Andy Fabian and Katherine Blundell at 
-				 Cambridge and Oxford Universities (2011) to 
-				 study what happens when powerful, jetted galaxies 
-				 switch their jets off. We developed an analytic, 
-				 physical model for the evolution of the lobe emission 
-				 at radio and X-ray energies. During jet activity, a 
-				 double radio source emits synchrotron radiation in the 
-				 radio and X-ray emission due to inverse-Compton (IC) 
-				 upscattering by gamma~10^3 electrons of the cosmic 
-				 microwave background. After the jets switch off, the 
-				 radio luminosity (due to higher gamma electrons) falls 
-				 faster than the X-ray luminosity and for some time the 
-				 source appears as an IC ghost of a radio galaxy before 
-				 becoming completely undetectable in the X-ray. We 
-				 predicted the observability of IC ghosts and their 
-				 volume-filling factors in the universe (paper 1). We also 
-				 studied two sources HDF 130 and 6C 0905+3955, which 
-				 appear to be IC ghosts (paper 2).
+                  <p>
+         I worked with Andy Fabian and Katherine Blundell at
+         Cambridge and Oxford Universities (2011) to
+         study what happens when powerful, jetted galaxies
+         switch their jets off. We developed an analytic,
+         physical model for the evolution of the lobe emission
+         at radio and X-ray energies. During jet activity, a
+         double radio source emits synchrotron radiation in the
+         radio and X-ray emission due to inverse-Compton (IC)
+         upscattering by gamma~10^3 electrons of the cosmic
+         microwave background. After the jets switch off, the
+         radio luminosity (due to higher gamma electrons) falls
+         faster than the X-ray luminosity and for some time the
+         source appears as an IC ghost of a radio galaxy before
+         becoming completely undetectable in the X-ray. We
+         predicted the observability of IC ghosts and their
+         volume-filling factors in the universe (paper 1). We also
+         studied two sources HDF 130 and 6C 0905+3955, which
+         appear to be IC ghosts (paper 2).
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2011MNRAS.413.1107M">--paper link 1--</a></li>
@@ -1326,7 +1332,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 3 -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1345,15 +1351,15 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">cosmological growth and feedback</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/feedback.png" alt="">
                   <p>
-				 I continued my work with I worked with Andy Fabian and 
-				 Katherine Blundell on our model of radio mode feedback 
-				 to explore the amount of kinetic feedback from SMBHs 
-				 in the Universe across cosmological time through 
-				 constraints given by the black hole mass function at 
-				 z=0 and the X-ray luminosity function of active 
-				 galactic nuclei (AGN). FR II feedback is found to be a 
-				 significant mode of feedback above redshifts z~1.5, 
-				 which has not been highlighted by previous studies.
+         I continued my work with I worked with Andy Fabian and
+         Katherine Blundell on our model of radio mode feedback
+         to explore the amount of kinetic feedback from SMBHs
+         in the Universe across cosmological time through
+         constraints given by the black hole mass function at
+         z=0 and the X-ray luminosity function of active
+         galactic nuclei (AGN). FR II feedback is found to be a
+         significant mode of feedback above redshifts z~1.5,
+         which has not been highlighted by previous studies.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/doi/10.1111/j.1365-2966.2012.21458.x">--paper link--</a></li>
@@ -1368,7 +1374,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-      
+
     <!-- Modal 4 -->
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1387,21 +1393,21 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">for 25,000 galaxies as function of environment</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/tfr.bmp" alt="">
                   <p>
-				 I worked with Andy Green, Karl Glazebrook, and Max 
-				 Malacari at Swinburne University, Australia (2012) to 
-				 recover Tully-Fisher relationships (TFRs) from SDSS 
-				 galaxies. A priori it is not clear whether we can 
-				 construct accurate TFRs given the small 3" diameter of 
-				 the fibres used for SDSS spectroscopic measurements. 
-				 However, we showed by modelling the H-alpha emission 
-				 profile as observed through a 3" aperture that for 
-				 galaxies at appropriate redshifts (z >0.045) the 
-				 fibres sample enough of the disc to statistically 
-				 recover the TFR. We found no statistically significant 
-				 dependence of the TFR on projected neighbour density. 
-				 We developed a robust method to use SDSS to study the 
-				 TFR as a function of any third variable and 
-				 distinguish between physical and aperture effects.
+         I worked with Andy Green, Karl Glazebrook, and Max
+         Malacari at Swinburne University, Australia (2012) to
+         recover Tully-Fisher relationships (TFRs) from SDSS
+         galaxies. A priori it is not clear whether we can
+         construct accurate TFRs given the small 3" diameter of
+         the fibres used for SDSS spectroscopic measurements.
+         However, we showed by modelling the H-alpha emission
+         profile as observed through a 3" aperture that for
+         galaxies at appropriate redshifts (z >0.045) the
+         fibres sample enough of the disc to statistically
+         recover the TFR. We found no statistically significant
+         dependence of the TFR on projected neighbour density.
+         We developed a robust method to use SDSS to study the
+         TFR as a function of any third variable and
+         distinguish between physical and aperture effects.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2013MNRAS.432.3381M">--paper link--</a></li>
@@ -1416,7 +1422,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
- 
+
     <!-- Modal 5 -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1435,19 +1441,19 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">on moving meshes</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/kh.png" alt="">
                   <p>
-				 I have extended the Discontinuous Galerkin (DG) method 
-				 for solving the equations of fluid dynamics 
-				 numerically to a moving mesh in <a 
-				 href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a>. 
-				 The DG approach uses local basis functions to 
-				 represent the solution on a cell rather than the 
-				 extended stencils of finite volume approaches and is 
-				 thus more parallelizable to higher order accuracy. The 
-				 method also handles magnetic fields in a locally 
-				 divergence-free way, unlike standard finite volume 
-				 methods on unstructured grids. To the right is a 
-				 picture of the Kelvin-Helmholtz instability simulated 
-				 with the method.
+         I have extended the Discontinuous Galerkin (DG) method
+         for solving the equations of fluid dynamics
+         numerically to a moving mesh in <a
+         href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a>.
+         The DG approach uses local basis functions to
+         represent the solution on a cell rather than the
+         extended stencils of finite volume approaches and is
+         thus more parallelizable to higher order accuracy. The
+         method also handles magnetic fields in a locally
+         divergence-free way, unlike standard finite volume
+         methods on unstructured grids. To the right is a
+         picture of the Kelvin-Helmholtz instability simulated
+         with the method.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2014MNRAS.437..397M">--paper link--</a></li>
@@ -1462,7 +1468,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-       
+
     <!-- Modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1482,25 +1488,25 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/ot64.png" alt="">
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/advect_2.png" alt="">
                   <p>
-				 I have developed a constrained transport (CT) 
-				 algorithm for solving the magnetohydrodynamic (MHD) 
-				 equations on arbitrary static and moving meshes, which 
-				 keeps the numerical representation of the magnetic 
-				 field divergence free to machine precision. Such a 
-				 method greatly improves the accuracy and stability 
-				 with previous methods, which may be non-conservative 
-				 and use cleaning schemes, or are restricted to static 
-				 meshes. Coupling the CT method with the moving mesh 
-				 approach greatly reduces advection errors and allows 
-				 pure advection solutions to be preserved to machine 
-				 precision. Shown are the Orszag-Tang test (well-known 
-				 test problem of decaying supersonic turbulence) 
-				 simulated with the moving CT method using an HLLD flux 
-				 solver, and an advected field loop (energy density is 
-				 plotted) compared to a moving mesh Powell cleaning 
-				 scheme approach and the static mesh CT approach. Only 
-				 the moving CT approach is able to advect the solution 
-				 exactly without artefacts.
+         I have developed a constrained transport (CT)
+         algorithm for solving the magnetohydrodynamic (MHD)
+         equations on arbitrary static and moving meshes, which
+         keeps the numerical representation of the magnetic
+         field divergence free to machine precision. Such a
+         method greatly improves the accuracy and stability
+         with previous methods, which may be non-conservative
+         and use cleaning schemes, or are restricted to static
+         meshes. Coupling the CT method with the moving mesh
+         approach greatly reduces advection errors and allows
+         pure advection solutions to be preserved to machine
+         precision. Shown are the Orszag-Tang test (well-known
+         test problem of decaying supersonic turbulence)
+         simulated with the moving CT method using an HLLD flux
+         solver, and an advected field loop (energy density is
+         plotted) compared to a moving mesh Powell cleaning
+         scheme approach and the static mesh CT approach. Only
+         the moving CT approach is able to advect the solution
+         exactly without artefacts.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2014MNRAS.442...43M">--paper link--</a></li>
@@ -1515,7 +1521,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
- 
+
     <!-- Modal 7 -->
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1534,12 +1540,12 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">for the non-linear Schr&ouml;dinger equations</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/shodyn.png" alt="">
                   <p>
-				 I have depeveloped, with Sauro Succi, a 
-				 Smoothed-Particle Hydrodynamics (SPH) for solving the 
-				 non-linear Schrodinger equations in Madelung (fluid) 
-				 form. These equations describe Bose-Einstein 
-				 condensates, non-linear optics, and alternate models 
-				 for dark matter.
+         I have depeveloped, with Sauro Succi, a
+         Smoothed-Particle Hydrodynamics (SPH) for solving the
+         non-linear Schrodinger equations in Madelung (fluid)
+         form. These equations describe Bose-Einstein
+         condensates, non-linear optics, and alternate models
+         for dark matter.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2015PhRvE..91e3304M">--paper link--</a></li>
@@ -1554,7 +1560,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-   
+
     <!-- Modal 8 -->
     <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1573,14 +1579,14 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">for MHD</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/diskCT.png" alt="">
                   <p>
-				  I have developed an efficient, cell-centered vector 
-				  potential formulation of the constraint transport 
-				  (CT) scheme for accurate simulation of the 
-				  magnetohydrodynamics (MHD) equations in the 
-				  moving-mesh <a 
-				  href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a> 
-				  code. Shown in the image is a simulation of the 
-				  magnetic energy in a magnetic disk galaxy.
+          I have developed an efficient, cell-centered vector
+          potential formulation of the constraint transport
+          (CT) scheme for accurate simulation of the
+          magnetohydrodynamics (MHD) equations in the
+          moving-mesh <a
+          href="https://wwwmpa.mpa-garching.mpg.de/~volker/arepo/">Arepo</a>
+          code. Shown in the image is a simulation of the
+          magnetic energy in a magnetic disk galaxy.
                   </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2016MNRAS.463..477M">--paper link--</a></li>
@@ -1595,7 +1601,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-   
+
     <!-- Modal 9 -->
     <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1614,9 +1620,9 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">simulations</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/tde.png" alt="">
                   <p>
-                 Work (in prep.) win James Guillochon on simulating tidal 
-                disruption events using a moving mesh, which allows one 
-                to simulate the entire system in a single, self-consistent 
+                 Work (in prep.) win James Guillochon on simulating tidal
+                disruption events using a moving mesh, which allows one
+                to simulate the entire system in a single, self-consistent
                 frame and study the late-term behaviour of the disruption.
                   </p>
                   <ul class="list-inline">
@@ -1632,7 +1638,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-   
+
     <!-- Modal 10 -->
     <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1650,13 +1656,13 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <h2>Integer Lattice</h2>
                   <p class="item-intro text-muted">for Vlasov-Poisson (6D)</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/IL.png" alt="">
-                  <p>  
-                I developed  a new, very simple and fast 
-                numerical method for solving the 6D Vlasov-Poisson 
-                equations for collisionless self-gravitating systems 
-                such as cold dark matter. The method can resolve 
-                fine-grained phase-space structure and obeys the 
-                Poincare Recurrence theorem. Memory scaling goes as N^4 
+                  <p>
+                I developed  a new, very simple and fast
+                numerical method for solving the 6D Vlasov-Poisson
+                equations for collisionless self-gravitating systems
+                such as cold dark matter. The method can resolve
+                fine-grained phase-space structure and obeys the
+                Poincare Recurrence theorem. Memory scaling goes as N^4
                 instead of N^6.
                   </p>
                   <ul class="list-inline">
@@ -1672,7 +1678,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 11 -->
     <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1691,9 +1697,9 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">in cosmological settings</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/lyman.png" alt="">
                   <p>
-                 Work (in prep.) in collaboration with students Sruthi 
-                Narayanan and Alex Gurvich on the effects of the 
-                primordial magnetic field on structure formation and 
+                 Work (in prep.) in collaboration with students Sruthi
+                Narayanan and Alex Gurvich on the effects of the
+                primordial magnetic field on structure formation and
                 Lyman-alpha power-spectra statistics.
                   </p>
                   <ul class="list-inline">
@@ -1709,7 +1715,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 12 -->
     <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1728,19 +1734,19 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">in magneto-gravo-turbulence</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/sf.png" alt="">
                   <p>
-                 I have studied the magnetic topology problem of 
-                the collapse of star forming cores from large (pc) 
-                cloud scales to a few AU relevant for ALMA 
-                observations. The work identifies 2 channels of star 
-                formation, based on whether turbulent pressure or 
-                magnetic pressure dominates in the large-scale 
-                environment. In turbulent-dominated systems, collapse 
-                is isotropic, with chaotic field lines, but not 
-                self-similar, with magnetic field strength scaling as 
-                density^(2/3). In the strongly magnetized case, the 
-                magnetic fields control collapse, leanding to a classic 
-                hourglass shape magnetic field morphology, and magnetic 
-                field strength scaling as density^(1/2), with plasma 
+                 I have studied the magnetic topology problem of
+                the collapse of star forming cores from large (pc)
+                cloud scales to a few AU relevant for ALMA
+                observations. The work identifies 2 channels of star
+                formation, based on whether turbulent pressure or
+                magnetic pressure dominates in the large-scale
+                environment. In turbulent-dominated systems, collapse
+                is isotropic, with chaotic field lines, but not
+                self-similar, with magnetic field strength scaling as
+                density^(2/3). In the strongly magnetized case, the
+                magnetic fields control collapse, leanding to a classic
+                hourglass shape magnetic field morphology, and magnetic
+                field strength scaling as density^(1/2), with plasma
                 beta unity.
                   </p>
                   <ul class="list-inline">
@@ -1756,7 +1762,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-      
+
     <!-- Modal 13 -->
     <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1775,9 +1781,9 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">quantum turbulent properties</p>
                   <!--  <img class="img-fluid d-block mx-auto" src="img/portfolio/axion.png" alt="">  -->
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/UBf9ghy2lPI" frameborder="0" allowfullscreen></iframe>
-                  <p>  Ultralight bosonic scalar field (axion) dark matter is a viable alternative to the standard cold dark matter (CDM) paradigm, 
+                  <p>  Ultralight bosonic scalar field (axion) dark matter is a viable alternative to the standard cold dark matter (CDM) paradigm,
                   as it makes the same large-scale predictions as CDM and potentially overcomes CDM's small-scale problems via a galaxy-scale de Broglie wavelength.
-				  Here I investigated some unexplored theoretical aspects of relaxed Bose-Einstein condensate (axion) dark matter (BECDM) haloes using state-of-the-art simulations.</p>
+          Here I investigated some unexplored theoretical aspects of relaxed Bose-Einstein condensate (axion) dark matter (BECDM) haloes using state-of-the-art simulations.</p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2017MNRAS.471.4559M">--paper link--</a></li>
                   </ul>
@@ -1791,7 +1797,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-     
+
     <!-- Modal 14 -->
     <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1809,9 +1815,9 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <h2>Schr&ouml;dinger to Vlasov</h2>
                   <p class="item-intro text-muted">emergence of classical behavior from quantum mechanics</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/spvp.png" alt="">
-                  <p>  The Schr&ouml;dinger-Poisson equations self-gravitating superfluid describe systems such as axion dark matter. 
-                  We show that in the limit of large axion mass these 3D equations for the wavefunction 
-                  converge to the Vlasov-Poisson system for 6D collisionless matter (e.g. cold dark matter) 
+                  <p>  The Schr&ouml;dinger-Poisson equations self-gravitating superfluid describe systems such as axion dark matter.
+                  We show that in the limit of large axion mass these 3D equations for the wavefunction
+                  converge to the Vlasov-Poisson system for 6D collisionless matter (e.g. cold dark matter)
                   in the sense that the self-potential converges as (m^-2) and the solution encodes rich phase-space information. </p>
                   <ul class="list-inline">
                     <li><a href="http://ui.adsabs.harvard.edu/abs/2018PhRvD..97h3519M">--paper link--</a></li>
@@ -1826,7 +1832,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 15 -->
     <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1846,7 +1852,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/oscillon.png" alt="">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/Sz079O4EJUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p>  Work with <a href="http://mustafa-amin.com/">Mustafa A. Amin</a> (Rice). We studied the non-equilibrium dynamics of an unstable scalar field in the universe, which results in formation and gravitational clustering of solitons.  Rapid formation of a large number of solitons is driven by attractive self-interactions of the field, after which gravity clusters them together, leading to mergers, scatterings and formation of soliton binaries.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://ui.adsabs.harvard.edu/abs/2019PhRvD.100f3507A">--paper link--</a></li>
                     <li><a href="https://youtu.be/Sz079O4EJUE">--more movies--</a></li>
@@ -1880,7 +1886,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">dense structures in compressible turbulence </p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/dense.jpg" alt="">
                   <p> We develop theory for the densest structures in supersonic, magnetized turbulence and find they form a network of transient stratified shocks aligned perpendicularly to the local magnetic field, extending ideas of <a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...854...88R/abstract">Robertson & Goldreich 2018</a>. Our results have implications for the inefficiency of star formation.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.480.3916M/abstract">--paper link--</a></li>
                   </ul>
@@ -1913,7 +1919,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">in fuzzy dark matter</p>
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/xZph7U73fFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <p> Work led by Princeton graduate student <a href="https://web.astro.princeton.edu/people/lachlan-lancaster">Lachlan Lancaster</a> on calculating different regimes of fuzzy dark matter dynamical friction, and applications to astrophysical systems.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://ui.adsabs.harvard.edu/abs/2020JCAP...01..001L">--paper link--</a></li>
                   </ul>
@@ -1946,7 +1952,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">to describe non-lognormal density distributions</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/shock1D.png" alt="">
                   <p> I developed theory with <a href="http://www.mhdturbulence.com/Home.html">Blakesley Burkhart</a> to describe how transient density structures evolve in the turbulent interstellar medium in a biased `Random Walk' sort of way that gives rise to a skewed distribution of gas densities, based on the framework developed by <a href="https://www.mtsafarzadeh.com/">Mohammad Safarzadeh</a>.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://iopscience.iop.org/article/10.3847/2041-8213/ab48f6">--ApJL link--</a></li>
                   </ul>
@@ -1960,7 +1966,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 19 -->
     <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -1979,7 +1985,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">and how to tell if dark matter is fuzzy, warm, or cold</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/fuzzyFilament.png" alt="">
                   <p>  With supercomputer simulations on TACC <i>Stampede2</i>, we simulated what galaxies would like in fuzzy dark matter model for the first time, taking into account dark matter quantum wave effects and baryonic coupling & feedback physics. We compare results against WDM and CDM simulations, and show how next-gen space telescopes like JWST may reveal the small-scale physical nature of the elusive dark matter particle.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://journals.aps.org/prl/accepted/ff072Ya7Re114272229b9ab6c8007bb975e1b81a1">--Phys. Rev. Letter link--</a></li>
                   </ul>
@@ -1993,7 +1999,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
         </div>
       </div>
     </div>
-    
+
     <!-- Modal 20 -->
     <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
@@ -2012,7 +2018,7 @@ Jesus Zavala <br>   <a href="https://notendur.hi.is/~jzavala/">Iceland</a> </div
                   <p class="item-intro text-muted">Incorporating multiple physics, mathematics, and computer science packages into one integrated code</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/mapp.png" alt="">
                   <p>  I work on developing next-generation multi-physics simulation capabilities at Lawrence Livermore National Laboratory to address the modeling needs of the high-energy-density physics (HEDP) community for simulating high-explosive, magnetic, or laser-driven experiments, including <a href="https://lasers.llnl.gov/">inertial confinement fusion</a> and <a href="https://www.sandia.gov/pulsed-power/">pulse-power magnetohydrodynamics</a>.
-				  </p>
+          </p>
                   <ul class="list-inline">
                     <li><a href="https://computing.llnl.gov/projects/mapp">--LLNL project link--</a></li>
                   </ul>
