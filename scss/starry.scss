@@ -10,13 +10,13 @@
 
 // Function to generate multiple box-shadow values for stars
 @function multiple-box-shadow($number_of_stars) {
-  $randomX: random(1000);
+  $randomX: random(1200);
   $randomY: random(1000);
   $value: "#{$randomX}px #{$randomY}px #FFF"; // Initial shadow
   $value: "#{$value}, #{$randomX}px #{$randomY+1000}px #FFF";
   $value: "#{$value}, #{$randomX}px #{$randomY+-1000}px #FFF";
   @for $i from 2 through $number_of_stars {
-    $randomX: random(1000);
+    $randomX: random(1200);
     $randomY: random(1000);
     $value: "#{$value}, #{$randomX}px #{$randomY}px #FFF, #{$randomX}px #{$randomY+1000}px #FFF, #{$randomX}px #{$randomY+-1000}px #FFF"; // Add more shadows
   }
