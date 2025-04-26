@@ -127,6 +127,8 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead .intro-text {
+    position: relative; /* Ensure it is positioned relative to control stacking */
+    z-index: 1; /* Place header content above the stars */
     padding-top: 150px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
